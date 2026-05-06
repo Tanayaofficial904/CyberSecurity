@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #312e81);
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  backdrop-filter: blur(10px);
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background: #38bdf8;
+  color: black;
+}
+
+.logo {
+  font-size: 20px;
+  color: #38bdf8;
+}
+
+.user-info button {
+  margin-left: 15px;
+  padding: 6px 12px;
+}
+
+/* DASHBOARD */
+.dashboard {
+  padding: 30px;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* CHART */
+.chart-box {
+  margin-top: 40px;
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* TIPS */
+.tips {
+  margin-top: 40px;
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.tips ul {
+  margin-top: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+#logout :hover{
+    cursor: pointer;
+    counter-increment: inherit;
+}

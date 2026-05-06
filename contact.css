@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #312e81);
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links a:hover {
+  background: #38bdf8;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+/* CONTACT */
+.contact {
+  padding: 50px;
+  text-align: center;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+}
+
+/* CONTAINER */
+.contact-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* FORM */
+form {
+  background: rgba(255,255,255,0.08);
+  padding: 25px;
+  border-radius: 12px;
+  width: 500px;
+  backdrop-filter: blur(10px);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* INFO */
+.contact-info {
+  text-align: left;
+  max-width: 300px;
+}
+
+.contact-info h3 {
+  margin-top: 15px;
+  color: #38bdf8;
+}
+
+/* SOCIAL */
+.social span {
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* BOTTOM SECTION */
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 40px;
+  padding: 0 50px;
+}
+
+/* LEFT SIDE */
+.contact-info {
+  max-width: 50%;
+}
+
+/* RIGHT SIDE */
+.follow-us {
+  text-align: right;
+}
+
+/* SOCIAL ICONS */
+.social {
+  margin-top: 10px;
+}
+
+.social span {
+  font-size: 22px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .bottom-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .follow-us {
+    text-align: left;
+  }
+}

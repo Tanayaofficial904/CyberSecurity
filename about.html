@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - KnowCyber</title>
+  <link rel="stylesheet" href="./CSS/about.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="navbar">
+  <div class="logo">🔐 KnowCyber</div>
+
+  <ul class="nav-links">
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="awareness.html">Awareness</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="./contact.html">LatestThread</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+  </ul>
+
+  <div class="user-info">
+    <span id="username">Welcome User</span>
+  </div>
+</header>
+
+<!-- ABOUT SECTION -->
+<section class="about">
+
+  <h1>📘 About CyberSafe</h1>
+
+  <p class="intro">
+    CyberSafe is a cyber security awareness platform designed to educate
+    students and internet users about online threats and safe practices.
+  </p>
+
+  <!-- CARDS -->
+  <div class="about-cards">
+
+    <div class="card">
+      <h3>🎯 Our Aim</h3>
+      <p>
+        To spread awareness about cyber threats and promote safe internet usage.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🎯 Objectives</h3>
+      <p>
+        Educate users about cyber risks, phishing attacks, password safety,
+        and secure browsing habits.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🌍 Scope</h3>
+      <p>
+        This project can be used in schools, colleges, and organizations
+        to reduce cyber crimes through awareness.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- WHY SECTION -->
+<section class="why">
+
+  <h2>💡 Why Cyber Security Awareness Matters</h2>
+
+  <div class="why-container">
+
+    <div class="why-box">
+      <h3>🔐 Data Protection</h3>
+      <p>Protect your personal and financial information.</p>
+    </div>
+
+    <div class="why-box">
+      <h3>⚠️ Prevent Attacks</h3>
+      <p>Avoid phishing, malware, and scams.</p>
+    </div>
+
+    <div class="why-box">
+      <h3>🌐 Safe Internet</h3>
+      <p>Build secure online habits for daily use.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TEAM -->
+<section class="team">
+  <h2>👨‍💻 Project Team</h2>
+  <p>This project is developed as part of a Cyber Security Awareness initiative.</p>
+</section>
+
+<script>
+  // 🚪 Logout
+function logout() {
+  localStorage.removeItem("loggedIn");
+  alert("Logged Out Successfully!");
+  
+  // Redirect to Login Page instead of login
+  window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>

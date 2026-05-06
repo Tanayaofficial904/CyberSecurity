@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Latest Threats - CyberSafe</title>
+  <link rel="stylesheet" href="./CSS/latest.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<<header class="navbar">
+  <div class="logo">🔐 KnowCyber</div>
+
+  <ul class="nav-links">
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="awareness.html">Awareness</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="./LatestThread.html">LatestThread</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+  </ul>
+
+  <div class="user-info">
+    <span id="username">Welcome User</span>
+  </div>
+</header>
+
+<!-- TITLE -->
+<section class="hero">
+  <h1>⚠️ Latest Cyber Threats</h1>
+  <p>Stay aware of new online dangers</p>
+</section>
+
+<!-- THREATS -->
+<section class="threats">
+
+  <div class="card">
+    <h3>📧 Phishing Attack</h3>
+    <p>Fake emails that trick users to share passwords or OTP.</p>
+  </div>
+
+  <div class="card">
+    <h3>🤖 AI Scams</h3>
+    <p>Deepfake voice/video used to impersonate people.</p>
+  </div>
+
+  <div class="card">
+    <h3>📱 Mobile Malware</h3>
+    <p>Fake apps that steal personal data from phones.</p>
+  </div>
+
+  <div class="card">
+    <h3>💻 Ransomware</h3>
+    <p>Locks your files and asks for money to unlock them.</p>
+  </div>
+
+</section>
+
+<!-- ALERT -->
+<section class="alert">
+  <h2>🚨 Alert</h2>
+  <p>Increase in phishing emails targeting bank users. Be careful!</p>
+</section>
+<script>
+     const user = JSON.parse(localStorage.getItem("user"));
+if (user) {
+  document.getElementById("username").innerText = "Welcome " + user.name;
+}
+</script>
+</body>
+</html>

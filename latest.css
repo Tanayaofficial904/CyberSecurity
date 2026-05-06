@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+/* NAV LINKS BASE */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* 🔥 HOVER EFFECT */
+.nav-links a:hover {
+  background: #38bdf8;
+  color: black;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 40px;
+}
+
+/* THREATS */
+.threats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card:hover {
+  background: #38bdf8;
+  color: black;
+}
+
+/* ALERT */
+.alert {
+  margin: 30px;
+  padding: 20px;
+  background: red;
+  border-radius: 10px;
+  text-align: center;
+}

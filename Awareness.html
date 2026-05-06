@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Awareness - KnowCyber</title>
+  <link rel="stylesheet" href="./CSS/awareness.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="navbar">
+  <div class="logo">🔐 KnowCyber</div>
+
+  <ul class="nav-links">
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="awareness.html">Awareness</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="./LatestThread.html">LatestThread</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+  </ul>
+
+  <div class="user-info">
+    <span id="username">Welcome User</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>🛡️ Cyber Security Awareness</h1>
+  <p>Learn how to stay safe from online threats and protect your digital identity.</p>
+</section>
+
+<!-- THREATS -->
+<section class="threats">
+
+  <h2>⚠️ Common Cyber Threats</h2>
+
+  <div class="threat-container">
+
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png">
+      <h3>Phishing</h3>
+      <p>Fake emails or messages used to steal your personal data.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
+      <h3>Malware</h3>
+      <p>Malicious software that damages your system or steals data.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/564/564619.png">
+      <h3>Ransomware</h3>
+      <p>Locks your files and demands money to restore access.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3064/3064172.png">
+      <h3>Social Engineering</h3>
+      <p>Tricks users into sharing confidential information.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SAFETY TIPS -->
+<section class="tips">
+
+  <h2>💡 Safety Tips</h2>
+
+  <div class="tips-container">
+
+    <div class="tip-box">🔑 Use strong passwords</div>
+    <div class="tip-box">📱 Enable 2FA</div>
+    <div class="tip-box">🚫 Avoid unknown links</div>
+    <div class="tip-box">🔄 Update software regularly</div>
+    <div class="tip-box">📧 Check email authenticity</div>
+    <div class="tip-box">🔒 Do not share OTP</div>
+
+  </div>
+
+</section>
+
+<!-- PHISHING GUIDE -->
+<section class="phishing">
+
+  <h2>📧 How to Identify Phishing</h2>
+
+  <ul>
+    <li>Check sender email address carefully</li>
+    <li>Look for spelling and grammar mistakes</li>
+    <li>Avoid urgent or threatening messages</li>
+    <li>Do not click suspicious links</li>
+  </ul>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>🚀 Test Your Knowledge</h2>
+  <p>Take the quiz and check your cyber awareness level.</p>
+  <a href="quiz.html"><button>Start Quiz</button></a>
+</section>
+
+<script>
+  const user = JSON.parse(localStorage.getItem("user"));
+if (user) {
+  document.getElementById("username").innerText = "Welcome " + user.name;
+}
+</script>
+
+</body>
+</html>

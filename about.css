@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #312e81);
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+/* NAV LINKS BASE */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* 🔥 HOVER EFFECT */
+.nav-links a:hover {
+  background: #38bdf8;
+  color: black;
+}
+
+/* ABOUT */
+.about {
+  padding: 50px;
+  text-align: center;
+}
+
+.intro {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+/* CARDS */
+.about-cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 12px;
+}
+
+/* WHY */
+.why {
+  padding: 50px;
+  text-align: center;
+}
+
+.why-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.why-box {
+  flex: 1;
+  padding: 20px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 12px;
+}
+
+/* TEAM */
+.team {
+  padding: 50px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-cards,
+  .why-container {
+    flex-direction: column;
+  }
+}

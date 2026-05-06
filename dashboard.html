@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - KnowCyber</title>
+  <link rel="stylesheet" href="./CSS/dashboard.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">🔐 KnowCyber</div>
+
+  <!-- NAV LINKS -->
+  <ul class="nav-links">
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="awareness.html">Awareness</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="./LatestThread.html">LatestThread</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+  </ul>
+
+  <!-- USER -->  
+  <div class="user-info">
+    <span id="username">Welcome User</span>
+    <button onclick="logout()">Logout</button>
+  </div>
+</header>
+
+<!-- DASHBOARD -->
+<section class="dashboard">
+
+  <!-- CARDS -->
+  <div class="cards">
+
+    <div class="card">
+      <h3>📚 Awareness Level</h3>
+      <p>Beginner</p>
+    </div>
+
+    <div class="card">
+      <h3>🧠 Quiz Score</h3>
+      <p id="score">0 / 10</p>
+    </div>
+
+    <div class="card">
+      <h3>⚠️ Threats Learned</h3>
+      <p>4 Types</p>
+    </div>
+
+    <div class="card">
+      <h3>🔐 Security Status</h3>
+      <p>Protected</p>
+    </div>
+
+  </div>
+
+  <!-- CHART -->
+  <div class="chart-box">
+    <h2>📊 Cyber Awareness Progress</h2>
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <!-- TIPS -->
+  <div class="tips">
+    <h2>💡 Security Tips</h2>
+    <ul>
+      <li>Use strong and unique passwords</li>
+      <li>Enable Two-Factor Authentication (2FA)</li>
+      <li>Do not share OTP or personal details</li>
+      <li>Beware of phishing emails</li>
+      <li>Keep software updated</li>
+    </ul>
+  </div>
+
+</section>
+
+<script src="./JS/dashboard.js"></script>
+</body>
+</html>
